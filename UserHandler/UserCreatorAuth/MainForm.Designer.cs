@@ -29,8 +29,6 @@ namespace UserCreatorAuth
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -40,6 +38,8 @@ namespace UserCreatorAuth
             this.label4 = new System.Windows.Forms.Label();
             this.comboBoxUserTypeCreation = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.textBoxSearch = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.buttonRetrieve = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -56,8 +56,7 @@ namespace UserCreatorAuth
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.textBoxUserID = new System.Windows.Forms.TextBox();
-            this.textBoxSearch = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
+            this.buttonGet = new System.Windows.Forms.Button();
             this.groupBoxUserCreation.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -68,7 +67,7 @@ namespace UserCreatorAuth
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 107);
+            this.label1.Location = new System.Drawing.Point(11, 148);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(109, 16);
             this.label1.TabIndex = 0;
@@ -78,7 +77,7 @@ namespace UserCreatorAuth
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(11, 85);
+            this.label2.Location = new System.Drawing.Point(10, 126);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(199, 18);
             this.label2.TabIndex = 1;
@@ -100,7 +99,7 @@ namespace UserCreatorAuth
             this.groupBoxUserCreation.Controls.Add(this.label4);
             this.groupBoxUserCreation.Controls.Add(this.comboBoxUserTypeCreation);
             this.groupBoxUserCreation.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxUserCreation.Location = new System.Drawing.Point(15, 139);
+            this.groupBoxUserCreation.Location = new System.Drawing.Point(15, 179);
             this.groupBoxUserCreation.Name = "groupBoxUserCreation";
             this.groupBoxUserCreation.Size = new System.Drawing.Size(509, 56);
             this.groupBoxUserCreation.TabIndex = 3;
@@ -150,12 +149,30 @@ namespace UserCreatorAuth
             this.groupBox1.Controls.Add(this.dataGridView1);
             this.groupBox1.Controls.Add(this.comboBoxUserTypeRetrieve);
             this.groupBox1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(14, 201);
+            this.groupBox1.Location = new System.Drawing.Point(14, 241);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(509, 425);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Users";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(6, 27);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(80, 16);
+            this.label11.TabIndex = 11;
+            this.label11.Text = "Search Box:";
+            // 
+            // textBoxSearch
+            // 
+            this.textBoxSearch.Location = new System.Drawing.Point(90, 23);
+            this.textBoxSearch.Name = "textBoxSearch";
+            this.textBoxSearch.Size = new System.Drawing.Size(413, 22);
+            this.textBoxSearch.TabIndex = 10;
+            this.textBoxSearch.TextChanged += new System.EventHandler(this.textBoxSearch_TextChanged);
             // 
             // label6
             // 
@@ -191,23 +208,7 @@ namespace UserCreatorAuth
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.Location = new System.Drawing.Point(6, 54);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -231,7 +232,7 @@ namespace UserCreatorAuth
             // 
             // buttonRefresh
             // 
-            this.buttonRefresh.Location = new System.Drawing.Point(431, 85);
+            this.buttonRefresh.Location = new System.Drawing.Point(430, 126);
             this.buttonRefresh.Name = "buttonRefresh";
             this.buttonRefresh.Size = new System.Drawing.Size(93, 38);
             this.buttonRefresh.TabIndex = 5;
@@ -251,7 +252,7 @@ namespace UserCreatorAuth
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.textBoxUserID);
             this.groupBox2.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.groupBox2.Location = new System.Drawing.Point(15, 632);
+            this.groupBox2.Location = new System.Drawing.Point(15, 672);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(509, 180);
             this.groupBox2.TabIndex = 6;
@@ -340,29 +341,22 @@ namespace UserCreatorAuth
             this.textBoxUserID.Size = new System.Drawing.Size(193, 22);
             this.textBoxUserID.TabIndex = 1;
             // 
-            // textBoxSearch
+            // buttonGet
             // 
-            this.textBoxSearch.Location = new System.Drawing.Point(90, 23);
-            this.textBoxSearch.Name = "textBoxSearch";
-            this.textBoxSearch.Size = new System.Drawing.Size(413, 22);
-            this.textBoxSearch.TabIndex = 10;
-            this.textBoxSearch.TextChanged += new System.EventHandler(this.textBoxSearch_TextChanged);
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(6, 27);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(80, 16);
-            this.label11.TabIndex = 11;
-            this.label11.Text = "Search Box:";
+            this.buttonGet.Location = new System.Drawing.Point(13, 61);
+            this.buttonGet.Name = "buttonGet";
+            this.buttonGet.Size = new System.Drawing.Size(510, 38);
+            this.buttonGet.TabIndex = 7;
+            this.buttonGet.Text = "Get Database Connection String";
+            this.buttonGet.UseVisualStyleBackColor = true;
+            this.buttonGet.Click += new System.EventHandler(this.buttonGet_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(536, 824);
+            this.ClientSize = new System.Drawing.Size(536, 857);
+            this.Controls.Add(this.buttonGet);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.buttonRefresh);
@@ -415,6 +409,7 @@ namespace UserCreatorAuth
         private System.Windows.Forms.TextBox textBoxOffice;
         private System.Windows.Forms.TextBox textBoxSearch;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button buttonGet;
     }
 }
 

@@ -327,5 +327,13 @@ namespace UserCreatorAuth
                 }
             }
         }
+
+        private void buttonGet_Click(object sender, EventArgs e)
+        {
+            Prompt prompt = new Prompt();
+            prompt.richTextBox1.Text = databaseConnection.ReadConnectionStringFromFile();
+            prompt.ShowDialog();
+  
+        }
     }
 }

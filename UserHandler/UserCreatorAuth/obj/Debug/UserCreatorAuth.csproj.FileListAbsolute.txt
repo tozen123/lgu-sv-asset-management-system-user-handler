@@ -20,3 +20,4 @@ D:\LGU-SV-AssetManagementSystem-Source\UserCreatorAndAuthenticator\UserCreatorAu
 D:\LGU-SV-AssetManagementSystem-Source\UserCreatorAndAuthenticator\UserCreatorAuth\lgu-sv-asset-management-system-user-handler\UserHandler\UserCreatorAuth\obj\Debug\UserCreatorAuth.csproj.CoreCompileInputs.cache
 D:\LGU-SV-AssetManagementSystem-Source\UserCreatorAndAuthenticator\UserCreatorAuth\lgu-sv-asset-management-system-user-handler\UserHandler\UserCreatorAuth\obj\Debug\UserCreatorAuth.exe
 D:\LGU-SV-AssetManagementSystem-Source\UserCreatorAndAuthenticator\UserCreatorAuth\lgu-sv-asset-management-system-user-handler\UserHandler\UserCreatorAuth\obj\Debug\UserCreatorAuth.pdb
+D:\LGU-SV-AssetManagementSystem-Source\UserCreatorAndAuthenticator\UserCreatorAuth\lgu-sv-asset-management-system-user-handler\UserHandler\UserCreatorAuth\obj\Debug\UserCreatorAuth.Prompt.resources
