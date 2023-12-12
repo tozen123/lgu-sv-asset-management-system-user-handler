@@ -332,6 +332,7 @@ namespace UserCreatorAuth
         {
             Prompt prompt = new Prompt();
             prompt.richTextBox1.Text = databaseConnection.ReadConnectionStringFromFile();
+            prompt.richTextBox2.Text = "server = IP,PORT ,Network Library=DBNAME; Initial Catalog=LGU_AMS_DB; User ID=sa ;Password=password";
             prompt.ShowDialog();
   
         }

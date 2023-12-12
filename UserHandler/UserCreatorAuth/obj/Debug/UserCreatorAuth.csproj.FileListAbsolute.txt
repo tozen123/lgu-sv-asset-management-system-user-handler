@@ -21,3 +21,7 @@ D:\LGU-SV-AssetManagementSystem-Source\UserCreatorAndAuthenticator\UserCreatorAu
 D:\LGU-SV-AssetManagementSystem-Source\UserCreatorAndAuthenticator\UserCreatorAuth\lgu-sv-asset-management-system-user-handler\UserHandler\UserCreatorAuth\obj\Debug\UserCreatorAuth.exe
 D:\LGU-SV-AssetManagementSystem-Source\UserCreatorAndAuthenticator\UserCreatorAuth\lgu-sv-asset-management-system-user-handler\UserHandler\UserCreatorAuth\obj\Debug\UserCreatorAuth.pdb
 D:\LGU-SV-AssetManagementSystem-Source\UserCreatorAndAuthenticator\UserCreatorAuth\lgu-sv-asset-management-system-user-handler\UserHandler\UserCreatorAuth\obj\Debug\UserCreatorAuth.Prompt.resources
+D:\LGU-SV-AssetManagementSystem-Source\UserCreatorAndAuthenticator\UserCreatorAuth\lgu-sv-asset-management-system-user-handler\UserHandler\UserCreatorAuth\bin\Debug\UserCreatorAuth.exe.manifest
+D:\LGU-SV-AssetManagementSystem-Source\UserCreatorAndAuthenticator\UserCreatorAuth\lgu-sv-asset-management-system-user-handler\UserHandler\UserCreatorAuth\bin\Debug\UserCreatorAuth.application
+D:\LGU-SV-AssetManagementSystem-Source\UserCreatorAndAuthenticator\UserCreatorAuth\lgu-sv-asset-management-system-user-handler\UserHandler\UserCreatorAuth\obj\Debug\UserCreatorAuth.exe.manifest
+D:\LGU-SV-AssetManagementSystem-Source\UserCreatorAndAuthenticator\UserCreatorAuth\lgu-sv-asset-management-system-user-handler\UserHandler\UserCreatorAuth\obj\Debug\UserCreatorAuth.application
